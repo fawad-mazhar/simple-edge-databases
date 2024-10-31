@@ -1,4 +1,4 @@
-# Space Launches API (GO SQLITE)
+# Space Launch Data API (GO SQLITE)
 
 A RESTful API service that manages and provides information about space launches. The service stores launch data in SQLite and provides endpoints to query launch information.
 
@@ -14,7 +14,6 @@ A RESTful API service that manages and provides information about space launches
 - Go 1.21+
 - Chi router for HTTP handling
 - SQLite3 for data storage
-- Standard library's encoding/json for JSON processing
 
 ## Project Structure
 

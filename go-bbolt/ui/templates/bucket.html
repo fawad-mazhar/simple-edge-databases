@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>BoltDB Browser - {{.BucketName}}</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/json.min.js"></script>
+    <script src="/static/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Bucket: {{.BucketName}}</h1>
+        <a href="/" class="back-link">← Back to Buckets</a>
+        <div class="pair-list">
+            {{range .Pairs}}
+            <div class="pair-item">
+                <div class="key" onclick="toggleValue(this, '{{$.BucketName}}', '{{.Key}}')">
+                    {{.Key}}
+                    <span class="toggle">▶</span>
+                </div>
+                <div class="value hidden">
+                    {{if .IsJSON}}
+                    <pre><code class="language-json">{{.JSONValue}}</code></pre>
+                    {{else}}
+                    {{.Value}}
+                    {{end}}
+                </div>
+            </div>
+            {{end}}
+        </div>
+    </div>
+</body>
+</html>

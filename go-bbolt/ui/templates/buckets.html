@@ -1,0 +1,18 @@
+<head>
+    <title>BoltDB Browser - Buckets</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BoltDB Buckets</h1>
+        <div class="bucket-list">
+            {{range .Buckets}}
+            <div class="bucket-item">
+                <a href="/bucket/{{.}}">{{.}}</a>
+            </div>
+            {{end}}
+        </div>
+    </div>
+</body>
+</html>

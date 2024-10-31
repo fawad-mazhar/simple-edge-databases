@@ -1,0 +1,122 @@
+/* static/style.css */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background: #1a1a1a;
+    color: #e1e1e1;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #2d2d2d;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #fff;
+    border-bottom: 2px solid #404040;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.bucket-list, .pair-list {
+    margin-top: 20px;
+}
+
+.bucket-item, .pair-item {
+    padding: 10px;
+    border-bottom: 1px solid #404040;
+}
+
+.bucket-item:hover {
+    background: #363636;
+}
+
+.bucket-item a {
+    text-decoration: none;
+    color: #4dabf7;
+    font-weight: 500;
+}
+
+.key {
+    cursor: pointer;
+    padding: 8px 12px;
+    background: #363636;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.key:hover {
+    background: #404040;
+}
+
+.value {
+    padding: 12px;
+    background: #222;
+    margin-top: 8px;
+    border-radius: 4px;
+    white-space: pre-wrap;
+    overflow-x: auto;
+}
+
+.value pre {
+    margin: 0;
+}
+
+.value code {
+    font-family: 'Fira Code', 'Consolas', monospace;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
+
+.toggle {
+    color: #888;
+    transition: transform 0.2s;
+    font-size: 12px;
+}
+
+.toggle.open {
+    transform: rotate(90deg);
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #888;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.back-link:hover {
+    color: #4dabf7;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2d2d2d;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #404040;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4a4a4a;
+}
+
