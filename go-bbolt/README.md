@@ -55,7 +55,7 @@ A RESTful API service that manages and provides information about space launches
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/fawad1985/sample-edge-dbs
+   git clone https://github.com/fawad-mazhar/simple-edge-dbs
    cd go-bbolt
    ```
 
