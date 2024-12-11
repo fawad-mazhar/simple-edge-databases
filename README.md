@@ -83,10 +83,6 @@ GET /api/launches      # Get all launches
 GET /api/launches/{id} # Get launch by ID
 ```
 
-# Simple Edge Databases
-
-[Previous sections remain the same...]
-
 ## Choosing the Right Implementation
 
 - **Choose BBolt if you need:**
@@ -166,8 +162,6 @@ GET /api/launches/{id} # Get launch by ID
       └── Rows and Columns
           └── Foreign Key Relationships
   ```
-
-[Rest of the README remains the same...]
 
 ## License
 
